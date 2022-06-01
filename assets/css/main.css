@@ -1,0 +1,17 @@
+#navbar {
+    padding: 10px 90px;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+}
+
+#navbar-ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.test {
+    height: 300vh;
+}
