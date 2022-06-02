@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #4caf50;
+    --secondary-color: #007bff;
     --bg-color: #353a40;
     --p-font: 'Work Sans', sans-serif;
     --h-font: 'Poppins', sans-serif;
@@ -17,6 +17,7 @@
     position: sticky !important;
     top: 0;
     left: 0;
+    z-index: 999999;
     box-shadow: 0 5px 5px -2px rgba(0, 0, 0, .2);
     /* border-top: 2px solid var(--primary-color); */
 }
@@ -39,8 +40,7 @@
 }
 
 #navbar-ul li a:hover {
-    transition: all 3s ease;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 #navbar-ul .active {
@@ -48,7 +48,7 @@
 }
 
 #navbar-ul .active a {
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 #navbar-ul li a {
@@ -58,4 +58,85 @@
 
 .test {
     height: 300vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(/assets/images/bg01\ \(2\).jpg) center center/cover;
+    opacity: 0.65;
+}
+
+#header .col-8 {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 35px;
+}
+
+#header .col-8 h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 80px;
+}
+
+#header .col-8 svg {
+    width: 90%;
+}
+
+#header .col-8 svg .svg-elem-1 {
+    stroke-dashoffset: 5070.958984375px;
+    stroke-dasharray: 5070.958984375px;
+    fill: transparent;
+    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s, fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+}
+
+#header .col-8 svg.active .svg-elem-1 {
+    stroke-dashoffset: 0;
+    fill: rgb(230, 36, 70);
+}
+
+#header .col-4 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+#header .col-4 ul li i:hover {
+    cursor: pointer;
+    color: rgb(230, 36, 70);
+}
+
+#header .col-4 ul li {}
+
+#header .col-4 ul li i {
+    font-size: 40px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .col-4 ul li i span {
+    font-size: 19px;
+    padding: 0px 18px;
+    font-family: var(--p-font);
+    color: var(--secondary-color);
 }
