@@ -493,6 +493,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 0 !important;
 }
 
 #contact #social-links ul li a {
