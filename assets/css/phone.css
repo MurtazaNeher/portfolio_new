@@ -115,7 +115,7 @@
     width: 100%;
 }
 
-#projects .right-col button {
+#projects .right-col .button {
     padding: 20px;
     font-family: var(--primary-font);
     width: 200px;
@@ -128,7 +128,7 @@
     transition: all 0.2s ease;
 }
 
-#projects .right-col button:hover {
+#projects .right-col .button:hover {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -262,6 +262,7 @@
 
 #about .a-r2 {
     padding: 0px 25px;
+    padding-bottom: 25px;
     text-align: justify;
 }
 

@@ -1,0 +1,77 @@
+#projects-page {
+    transition: background 1s ease-in-out;
+}
+
+
+/* #portfolio .port-img img {
+    
+} */
+
+#projects-page .project-card {
+    display: flex;
+    align-items: center;
+    max-height: 60vh;
+    border: 2px solid black;
+}
+
+#projects-page .port-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 172px;
+}
+
+#projects-page .port-text .title {
+    color: #F42E58;
+    font-weight: 700;
+}
+
+#projects-page .port-text a {
+    background-color: #383838;
+    border-radius: 50px;
+    width: 150px;
+    color: #fff;
+    padding: 10px 25px;
+}
+
+#projects-page .port-img {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+#port-1-img,
+#port-2-img,
+#port-3-img,
+#port-4-img,
+#port-5-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    /* min-height: 100%; */
+    width: 40%
+}
+
+#port-1-img {
+    background-image: url(../images/port1img.jpg);
+}
+
+#port-2-img {
+    background-image: url(../images/port4img.jpg);
+}
+
+#port-3-img {
+    background-image: url(../images/port3img.jpg);
+}
+
+#port-4-img {
+    background-image: url(../images/port1img.jpg);
+}
+
+#port-5-img {
+    background-image: url(../images/port2img.jpg);
+}
