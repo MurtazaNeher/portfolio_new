@@ -192,6 +192,109 @@ body {
 }
     /* border: 2px solid; */
 
-span {
-    color: rgb(160, 10, 173);
+@media only screen and (max-width: 768px) {
+    .ball {
+        background: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -750%);
+        /* mix-blend-mode: difference; */
+        z-index: 1;
+        transition: background 1s ease;
+    }
+    /* .ball {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -200%);
+    mix-blend-mode: difference;
+    z-index: 99;
+    transition: background 1s ease;
+} */
+    #projects-page .container-fluid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #projects-page .project-card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #projects-page .reverse {
+        /* flex-direction: row-reverse; */
+    }
+    #projects-page .reverse .pc-content {
+        /* align-items: flex-end; */
+    }
+    .project-card .pc-img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 25px;
+        align-items: center;
+    }
+    .project-card .pc-img {
+        position: relative;
+        margin: 5px 0px;
+    }
+    .project-card .pc-img img {
+        width: 200px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 8px;
+    }
+    .project-card .pc-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20PX;
+    }
+    .project-card .pc-content h2 {
+        font-weight: 700;
+        font-size: 30px;
+        font-family: var(--secondary-font);
+    }
+    .project-card .pc-content .p-date {
+        font-weight: 500;
+    }
+    .project-card .pc-content .p-des {
+        font-weight: 400;
+        font-size: 17px;
+        text-align: justify;
+    }
+    .project-card .pc-content .p-btn {
+        background-color: #000;
+        text-align: center;
+        width: 97%;
+        padding: 5px;
+        border-radius: 50px;
+        margin: 20px 0px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 400;
+        border: 2px solid #fff;
+        transition: all 1s ease;
+        z-index: 999;
+    }
+    .project-card .pc-content .p-btn:hover {
+        border: 2px solid #111;
+        background-color: transparent;
+        color: #111;
+    }
+    #contact .title {
+        font-size: 90% !important;
+    }
 }
