@@ -1,3 +1,7 @@
+#navbar {
+    z-index: 999999999999 !important;
+}
+
 #navbar .navbar-brand {
     font-size: 22px;
 }
