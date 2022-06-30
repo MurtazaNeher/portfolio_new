@@ -50,6 +50,12 @@ function animate() {
 }
 animate();
 
+// function mousePosUpdate(event) {
+//     mouseX = event.pageX;
+//     mouseY = event.pageY;
+// }
+// mousePosUpdate();
+
 // Move ball with cursor
 document.addEventListener("mousemove", function(event) {
     mouseX = event.pageX;
