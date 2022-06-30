@@ -97,6 +97,86 @@ align-items: center;
     color: #fff;
 }
 
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.float .float-icon {
+    display: inline-block;
+    border-radius: 50%;
+    background: #4fce5d;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-animation: pulse-animation 2s infinite;
+    animation: pulse-animation 2s infinite;
+    -webkit-transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    text-decoration: none;
+}
+
+.float .float-icon:hover {
+    background: #49b956;
+}
+
+.float .float-icon i {
+    font-size: 28px;
+    color: white;
+}
+
+.float p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4fce5d;
+}
+
+@-webkit-keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(0, 170, 233, 0.2);
+        box-shadow: 0 0 0 0px rgba(0, 170, 233, 0.2);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 170, 233, 0);
+        box-shadow: 0 0 0 20px rgba(0, 170, 233, 0);
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(0, 170, 233, 0.2);
+        box-shadow: 0 0 0 0px rgba(0, 170, 233, 0.2);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 170, 233, 0);
+        box-shadow: 0 0 0 20px rgba(0, 170, 233, 0);
+    }
+}
+
 .test {
     height: 300vh;
 }
