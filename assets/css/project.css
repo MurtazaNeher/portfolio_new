@@ -24,10 +24,26 @@ body {
     --primary-font: 'Poppins', sans-serif;
 }
 
+#project-header {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+#project-header .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-header .img-div img {
+    width: 70%;
+}
+
 #projects-page {
     /* transition: color 0.5s ease-in-out; */
     transition: background 1s ease;
     position: relative;
+    /* display: none; */
 }
 
 #projects-page:hover {
