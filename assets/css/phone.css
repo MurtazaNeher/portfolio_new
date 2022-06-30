@@ -1,7 +1,3 @@
-#navbar {
-    /* z-index: 999999999999 !important; */
-}
-
 #navbar .navbar-brand {
     font-size: 22px;
 }
@@ -166,6 +162,7 @@
     color: #fff !important;
     text-align: center;
     margin: 25px auto;
+    font-size: 1.5rem;
 }
 
 #about {
