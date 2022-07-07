@@ -526,14 +526,6 @@ body {
     padding-top: 100px;
 }
 
-#form-container {
-    padding: 50px;
-}
-
-form .btn {
-    background-color: var(--primary-color);
-}
-
 #contact .container {
     display: flex;
     flex-direction: column;
