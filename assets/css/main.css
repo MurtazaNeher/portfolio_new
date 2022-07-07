@@ -72,7 +72,7 @@ body {
 .float {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,7 +92,7 @@ body {
 .float .float-icon {
     display: inline-block;
     border-radius: 50%;
-    background: #4fce5d;
+    background: var(--primary-color);
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
@@ -113,7 +113,7 @@ body {
 }
 
 .float .float-icon:hover {
-    background: #49b956;
+    background: hsl(343, 98%, 49%);
 }
 
 .float .float-icon i {
@@ -123,8 +123,8 @@ body {
 
 .float p {
     font-size: 15px;
-    font-weight: 600;
-    color: #4fce5d;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 @-webkit-keyframes pulse-animation {
@@ -517,8 +517,21 @@ body {
 }
 
 #contact {
-    height: 100vh;
     background: #000000;
+}
+
+#contact h1 {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 100px;
+}
+
+#form-container {
+    padding: 50px;
+}
+
+form .btn {
+    background-color: var(--primary-color);
 }
 
 #contact .container {
